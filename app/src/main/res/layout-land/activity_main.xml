@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:background="@color/amarillo">
+
+    <TableLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:orientation="horizontal"></LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/resultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:background="@drawable/fondo_resultado"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="0"
+                android:textSize="@dimen/sizeTextResult" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                style="@style/style_funtions"
+                android:onClick="fnclear"
+                android:text="AC"
+
+
+                />
+
+            <Button
+                style="@style/style_funtions"
+                android:text="+/-"
+                android:onClick="fnMasMenos"
+                />
+
+            <Button
+                android:id="@+id/mod"
+                style="@style/style_funtions"
+                android:text="%"
+                android:onClick="fnOperaciion"/>
+
+            <Button
+                android:id="@+id/div"
+                style="@style/style_funtions"
+                android:layout_height="64dp"
+                android:text="/" />
+
+            <Button
+                android:id="@+id/sqrt"
+                style="@style/style_funtions"
+                android:text="√"
+                android:onClick="fnOperaciion"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/style_funtions"
+                android:text="^2" />
+
+            <Button
+                android:id="@+id/sin"
+                style="@style/style_funtions"
+                android:text="Sin"
+                android:onClick="fnOperaciion"/>
+
+            <Button
+                android:id="@+id/cos"
+                style="@style/style_funtions"
+                android:text="Cos"
+                android:onClick="fnOperaciion"/>
+
+            <Button
+                style="@style/style_funtions"
+                android:text="Log"
+                android:onClick="fnOperaciion"/>
+            <Button
+                android:id="@+id/tan"
+                style="@style/style_funtions"
+                android:text="Tan"
+                android:onClick="fnOperaciion"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/bt7"
+                style="@style/style_numbers"
+                android:text="7" />
+
+            <Button
+                style="@style/style_numbers"
+                android:text="8" />
+
+            <Button
+                style="@style/style_numbers"
+                android:onClick="scrib9"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/multi"
+                style="@style/style_funtions"
+                android:text="x"
+                android:onClick="fnOperaciion"
+                />
+
+            <Button
+                style="@style/style_funtions"
+                android:text="e"
+                android:onClick="fnEuler"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                style="@style/style_numbers"
+                android:text="4" />
+
+            <Button
+                style="@style/style_numbers"
+                android:text="5" />
+
+            <Button
+                style="@style/style_numbers"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/less"
+                style="@style/style_funtions"
+                android:onClick="fnOperaciion"
+                android:text="-"
+
+                />
+            <Button
+                style="@style/style_funtions"
+                android:text="X!"
+                android:onClick="fnFact"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                style="@style/style_numbers"
+                android:text="1" />
+
+            <Button
+                style="@style/style_numbers"
+                android:text="2" />
+
+            <Button
+                style="@style/style_numbers"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/add"
+                style="@style/style_funtions"
+                android:onClick="fnOperaciion"
+                android:text="+" />
+
+            <Button
+                style="@style/style_funtions"
+                android:text="ln" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="401dp"
+            android:layout_height="208dp">
+
+            <Button
+                style="@style/style_numbers"
+                android:layout_span="2"
+                android:text="0" />
+
+            <Button
+                style="@style/style_numbers"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btnEquals"
+                style="@style/style_funtions"
+                android:onClick="fnEquals"
+                android:text="=" />
+
+            <Button
+                style="@style/style_funtions"
+                android:text="π"
+                android:onClick="fnPi"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:layout_span="4"
+                android:src="@drawable/logoapp" />
+        </TableRow>
+
+
+    </TableLayout>
+</ScrollView>

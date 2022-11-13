@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name = "sizeTextButtons">30dp</dimen>
+    <dimen name = "sizeTextResult">45dp</dimen>
+    <dimen name = "margeButtons">2dp</dimen>
+    <dimen name = "grosorLineResult">3dp</dimen>
+
+
+
+</resources>
